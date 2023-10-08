@@ -3,7 +3,6 @@ import "../styles/navbar.css";
 import logo from "../Images/image1.png.png";
 import { useState, useEffect } from "react";
 import logo1 from "../Images/logo.png.png";
-import see from "../Images/see.png.jpg";
 
 export const Navbar = () => {
   const [text, setText] = useState("");
@@ -38,6 +37,10 @@ export const Navbar = () => {
       cancelAnimationFrame(animationFrame);
     };
   }, [charIndex, currentIndex, texts]);
+
+const pdfPath ="../../assets/Gaurav Sharma-Full Stack Web Developer.pdf"
+
+  
 
   return (
     <div id="nav-menu">
@@ -74,13 +77,14 @@ export const Navbar = () => {
             </li>
             <li>
               <a
-                href="link-to-resume.pdf"
+                href="../../assets/Gaurav Sharma-Full Stack Web Developer.pdf"
                 target="_blank"
+                download="https://drive.google.com/file/d/1w2f9GVQUNgWW3vf4-n3b9dD0U2pTLkSV/view?usp=sharing"
                 className="nav-link resume"
                 id="resume-link-1"
               >
                 <button className="button" id="resume-button-2">
-                  <img src={logo1} className="download" /> Resume
+                  <img src={logo1} className="download"/> Resume
                 </button>
               </a>
             </li>
@@ -97,7 +101,9 @@ export const Navbar = () => {
           <h2 className="animated">{text}</h2>
           <div className="buttons">
           <button className="buttonContact">Contact</button>
+          <a href="https://drive.google.com/file/d/1w2f9GVQUNgWW3vf4-n3b9dD0U2pTLkSV/view?usp=drive_link" id="resume-link-1" target="_blank">
           <button className="buttonResume" id="resume-button-1"> Resume</button>
+              </a>
           </div>
         </div>
       </div>
