@@ -21,7 +21,7 @@ const Contact = () => {
             </a>
           </div>
           <div className="contact-item">
-            <a href="https://www.linkedin.com/in/your-username"  id="contact-linkedin">
+            <a href="https://www.linkedin.com/in/gaurav-sharma-827830247/"  id="contact-linkedin">
              <img src={linkedin} className='img'/>
             </a>
           </div>
