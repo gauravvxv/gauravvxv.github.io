@@ -1,10 +1,13 @@
 import React from "react";
 import "../styles/navbar.css";
 import logo1 from "../Images/logo.png.png";
+import resume from "../Images/resume.pdf"
 
 export const Navbar = () => {
 
-
+const handleresume = () =>{
+  window.open('https://drive.google.com/file/d/1w2f9GVQUNgWW3vf4-n3b9dD0U2pTLkSV/view?usp=sharing');
+}
   
 
   return (
@@ -42,13 +45,13 @@ export const Navbar = () => {
             </li>
             <li>
               <a
-                href="../../resume.pdf"
+                href={resume}
                 target="_blank"
-                // download=""
+                download="Gaurav Sharma-Full Stack Web Developer (1).pdf"
                 className="nav-link resume"
                 id="resume-link-1"
               >
-                <button className="button" id="resume-button-2">
+                <button className="button" id="resume-button-2" onClick={handleresume} >
                   <img src={logo1} className="download"/> Resume
                 </button>
               </a>

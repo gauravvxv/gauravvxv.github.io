@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect,useState } from 'react';
 import logo from "../Images/image1.png.png";
 import "../styles/home.css"
+import resume from "../Images/resume.pdf"
 export const Home = () => {
     const [text, setText] = useState("");
     const texts = [
@@ -35,8 +36,10 @@ export const Home = () => {
         cancelAnimationFrame(animationFrame);
       };
     }, [charIndex, currentIndex, texts]);
-  
-  const pdfPath ="../../assets/Gaurav Sharma-Full Stack Web Developer.pdf"
+    const handleresume = () =>{
+      window.open('https://drive.google.com/file/d/1w2f9GVQUNgWW3vf4-n3b9dD0U2pTLkSV/view?usp=sharing');
+    }
+      
   return (
     <div id='home'>
           <div className="image-container">
@@ -49,8 +52,8 @@ export const Home = () => {
           <h2 className="animated">{text}</h2>
           <div className="buttons">
           <button className="buttonContact">Contact</button>
-          <a href="https://drive.google.com/file/d/1w2f9GVQUNgWW3vf4-n3b9dD0U2pTLkSV/view?usp=drive_link" id="resume-link-1" target="_blank">
-          <button className="buttonResume" id="resume-button-1"> Resume</button>
+          <a href={resume} download="Gaurav Sharma-Full Stack Web Developer (1).pdf" id="resume-link-1" target="_blank">
+          <button className="buttonResume" id="resume-button-1" onClick={handleresume}> Resume</button>
               </a>
           </div>
         </div>
