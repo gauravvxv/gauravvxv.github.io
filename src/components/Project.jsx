@@ -8,6 +8,8 @@ import glossier from "../Images/glossier.pgn.png";
 import travel from "../Images/travel.png.png";
 import react from "../Images/react.png.png";
 import redux from "../Images/redux.png.png";
+import tindog from "../Images/tindog.png.png"
+import boot from "../Images/boot.png.png"
 import GitHubCalendar from 'react-github-calendar';
 const Project = () => {
   return (
@@ -17,6 +19,31 @@ const Project = () => {
       </div>
 
       <div className="project-card">
+
+        <div className="container">
+          <div>
+            <img src={tindog} className="project-img" />
+          </div>
+          <div className="details">
+            <h2 className="project-title">BOAT</h2>
+            <p className="project-description">
+            Discover the pawfect playdate or even puppy love on our HTML, CSS, and Bootstrap-designed website, connecting dogs for tail-wagging fun.
+            </p>
+            <h4>Techstacks:</h4>
+            <div className="project-tech-stack">
+              <img src={html} />
+              <img src={css} />
+              <img src={boot} />
+            </div>
+            <a href="https://storied-chimera-2168ba.netlify.app/">
+              <button className="project-github-link">Preview</button>
+            </a>
+            <a href="https://github.com/vivekverma4669/boat_project_group_7">
+              <button className="project-deployed-link">Source Code</button>
+            </a>
+          </div>
+        </div>
+
         <div className="container">
           <div>
             <img src={boat} className="project-img" />
@@ -91,15 +118,15 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div  id="github-streak-stats">
-      <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak" /></a>
+      <div id="github-streak-stats">
+        <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak" /></a>
       </div>
       <p className="react-activity-calendar">
-      <img src="https://ghchart.rshah.org/gauravvxv"/>
+        <img src="https://ghchart.rshah.org/gauravvxv" />
       </p>
-      <p  id="github-stats-card">
-  <img src="https://github-readme-stats.vercel.app/api?username=gauravvxv&show_icons=true&locale=en&theme=dark" alt="GitHub Stats" />
-</p>
+      <p id="github-stats-card">
+        <img src="https://github-readme-stats.vercel.app/api?username=gauravvxv&show_icons=true&locale=en&theme=dark" alt="GitHub Stats" />
+      </p>
     </div>
   );
 };

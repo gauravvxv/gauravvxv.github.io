@@ -53,7 +53,7 @@ export const Home = () => {
           <div className="buttons">
           <button className="buttonContact">Contact</button>
           <a href={resume} download="Gaurav Sharma-Full Stack Web Developer (1).pdf" id="resume-link-1" target="_blank">
-          <button className="buttonResume" id="resume-button-1" onClick={handleresume}> Resume</button>
+          <button  id="resume-button-1" onClick={handleresume}> Resume</button>
               </a>
           </div>
         </div>
