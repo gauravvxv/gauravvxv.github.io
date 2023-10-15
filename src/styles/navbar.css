@@ -1,12 +1,12 @@
 #nav-menu {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 1000; /* Adjust the z-index as needed */
+  width: auto;
+  z-index: 1000;
   background-color: #12021c;
   padding: 10px 0;
-  /* text-align: center; */
+  height: 50px;
 }
  
 #nav-menu ul {
@@ -58,4 +58,21 @@ border-bottom: none;
   color: white;
 }
 
-
+.download{
+  width: 20px;
+  background-color: #12021c;
+}
+#resume-button-1{
+  padding: 8px 30px;
+  border-radius: 7px;
+  font-weight: 500;
+  border: 1px solid #8E05C2;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+}
+#resume-button-1:hover{
+  border: none;
+  border-bottom: 1px solid purple;
+}

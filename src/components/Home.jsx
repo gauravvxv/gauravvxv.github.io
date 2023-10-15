@@ -1,8 +1,10 @@
 import React from 'react'
 import { useEffect,useState } from 'react';
-import logo from "../Images/image1.png.png";
+import logo from "../Images/bg1.png";
 import "../styles/home.css"
+import Link from "react-scroll"
 import resume from "../Images/resume.pdf"
+
 export const Home = () => {
     const [text, setText] = useState("");
     const texts = [
@@ -10,6 +12,7 @@ export const Home = () => {
       "A MERN Developer",
       "A Front-end Developer",
     ]; 
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
   
@@ -39,25 +42,38 @@ export const Home = () => {
     const handleresume = () =>{
       window.open('https://drive.google.com/file/d/1w2f9GVQUNgWW3vf4-n3b9dD0U2pTLkSV/view?usp=sharing');
     }
-      
+    
+    function scrollToSection(sectionId) {
+      const targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    }
   return (
     <div id='home'>
-          <div className="image-container">
-        <img src={logo} className="image1" />
-      </div>
-      <div className="contain">
-        <div className="little">
-          <h3 className="hie">Hi, I'm</h3>
-          <h1 id="user-detail-name">Gaurav Sharma</h1>
-          <h2 className="animated">{text}</h2>
-          <div className="buttons">
-          <button className="buttonContact">Contact</button>
-          <a href={resume} download="Gaurav Sharma-Full Stack Web Developer (1).pdf" id="resume-link-1" target="_blank">
-          <button  id="resume-button-1" onClick={handleresume}> Resume</button>
-              </a>
-          </div>
-        </div>
-      </div>
-    </div>
+     <div className='left'>
+      <p>Hi, I'm</p>
+      <h2>Gaurav Sharma</h2>
+      <h2 className='animation'>{text}</h2>
+   <div>
+<a href='#contact'>
+<button className="buttonContact">
+Contact
+ </button>
+</a>
+<a href={resume} download="Gaurav Sharma-Full Stack Web Developer (1).pdf" id="resume-link-1" target="_blank">
+<button  id="resume-button-2" onClick={handleresume}> Resume</button>
+    </a>
+</div>
+</div>
+<div className='right'>
+ <img src={logo} className='background-img'/>
+</div>
+     </div>
   )
 }
+
+
