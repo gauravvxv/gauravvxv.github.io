@@ -1,8 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 50.5%;
+}
+
+
 #skills{
     background-color: #12021c;
-    width: 100%;
+    max-width: 100%;
     height: 800px;
-    margin-top: -40px;
+    padding-bottom: 200px;
 }
 .skill {
     font-size: 50px;
@@ -23,12 +37,13 @@
     }
   }
 
-  .container{
-    width: 100%;
-  margin-top: -1px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .skills-card {
-    width: 250px;
+    width: 200px;
     border-radius: 50px;
     align-items: center;
     justify-content: center;
@@ -54,15 +69,14 @@
    display: grid;
    grid-template-columns: repeat(3,1fr);
    margin: auto;
-   width: 65%;
-   gap: 20px;
-   /* height: 500px; */
+   width: 50%;
+   gap: 70px;
+   padding-top: 50px;
   }
  
   .skills-card-img{
-    width: 110px;
+    width: 100px;
     margin-top: 20px;
-    height: 100px;
   }
   .skills-card-name{
     color:  #5b047e;
@@ -74,3 +88,70 @@
     transform: scale(1.2); 
   }
   
+  @media screen and (min-width: 482px) and (max-width: 1100px) {
+    .skills-card-img{
+      width: 25%;
+    }
+  }
+  
+  /* Styles for mobile and small tablets */
+  @media screen and (max-width: 1100px) {
+    #skills {
+      background-color: #12021c;
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+    }
+  
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+      gap: 10px;
+      margin-top: 0;
+    }
+    
+    .skills-card {
+      width: 250px;
+      border-radius: 50px;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    
+    .skills-card:hover {
+      background-color: #5b047e;
+      border: 2px solid #5b047e;
+      animation: border-pulse 0.6s infinite alternate;
+    }
+    
+    .skills-card-img {
+     width: 100%;
+    }
+    
+    .skills-card-name {
+     text-align: center;
+    }
+    
+    .skills-card:hover .skills-card-img {
+      transform: scale(1.2);
+    }
+    .skills-card-img{
+      width: 25%;
+    }
+  }
+  
+  /* Styles for mobile devices */
+  @media screen and (max-width: 998px) {
+    /* Add specific styles for mobile devices if needed */
+  }
+  
+  /* Styles for smaller screens */
+  @media screen and (max-width: 798px) {
+    /* Add specific styles for smaller screens if needed */
+  }
+  
+  /* Styles for very small screens */
+  @media screen and (max-width: 520px) {
+    /* Add specific styles for very small screens if needed */
+  }

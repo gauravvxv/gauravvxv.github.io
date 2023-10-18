@@ -1,10 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 50.5%;
+}
+
+
 #home{
   background-color:  #12021c;
-  height: 650px;
+  padding-bottom: 200px;
 }
-.animation{
-  color: #8E05C2;
-}
+
 #home > .left{
   display: flex;
   flex-direction:column;
@@ -12,7 +24,7 @@
   align-items: flex-start;
   color: white;
   margin-left: 120px;
-padding-top: 120px;
+padding-top: 250px;
 }
 #home > .left > p{
  font-size: 30px;
@@ -22,7 +34,9 @@ padding-top: 120px;
  font-size: 30px;
  text-align: left;
  margin: 20px 0px;
- margin-top: -20px;
+}
+#home > .left > img{
+  width: 40%;
 }
 #resume-button-2{
   padding: 8px 30px;
@@ -53,31 +67,18 @@ padding-top: 120px;
   border: 1px solid white;
   color: #8E05C2;
 }
-
-#home > .right{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -200px;
-}
 .background-img{
-  width: 30%;
-  margin-left: 30%;
-
+    width: 30%;
+  margin-left: 40%;
+  margin-top: -250px;
 }
 
 @media only screen   and (min-width:0px) and (max-width:481px){
  
-
- #home> .left > h2{
-      font-size: 28px;
-  }
-  .animation{
-    font-size: 10px;
-  }
   #home{
       display: flex;
       flex-direction: column;
+     
   }
   #home > .left{
       align-items: center;
@@ -86,9 +87,8 @@ padding-top: 120px;
       text-align: center;
       font-size: 12px;
    }
-  #home > .left >.animation{
-    margin-top: 1px;
-      font-size: 19px;
+  #home > .left >img{
+   width: 100%;
    }
    #home > .right{
       display: none;
@@ -97,18 +97,21 @@ padding-top: 120px;
 }
 
 
-@media only screen   and (min-width:887px) and (max-width:1792px){
+@media only screen   and (min-width:887px) and (max-width:1099px){
   #home > .right{
     display: none;
+}
+#home > .left{
+  align-items: center;
 }
 }
 
 
 
 @media only screen   and (min-width:482px) and (max-width:1100px){
-  nav > .left > .animation{
-      font-size: 30px
-  }
+  #home > .left{
+    align-items: center;
+ }
   #home > .right{
     display: none;
 }

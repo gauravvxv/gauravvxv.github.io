@@ -1,28 +1,25 @@
 import React from "react";
 import "../styles/navbar.css";
-import logo1 from "../Images/logo.png.png";
 import resume from "../Images/resume.pdf"
-import {FaBars} from "react-icons/fa"
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 export const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
+
+  const handleresume = () => {
+    window.open('https://drive.google.com/file/d/1w2f9GVQUNgWW3vf4-n3b9dD0U2pTLkSV/view?usp=sharing');
   }
 
-const handleresume = () =>{
-  window.open('https://drive.google.com/file/d/1w2f9GVQUNgWW3vf4-n3b9dD0U2pTLkSV/view?usp=sharing');
-}
-  
 
   return (
     <div id="nav-menu">
-      <div className="nav-container">
+      <nav className="main-nav">
+        <div className="logo">
+          <h2>Gaurav</h2>
+        </div>
+        <div className={menuVisible ? "menu-link mobile-menu-link" :"menu-link" }>
           <ul>
-            <li>
-              <span className="name">Gaurav</span>
-            </li>
             <li>
               <a href="#home" className="nav-link home">
                 Home
@@ -48,6 +45,11 @@ const handleresume = () =>{
                 Contact
               </a>
             </li>
+          </ul>
+        </div>
+
+        <div className="social-media">
+          <ul className="social-media-desktop">
             <li>
               <a
                 href={resume}
@@ -57,12 +59,19 @@ const handleresume = () =>{
                 id="resume-link-1"
               >
                 <button id="resume-button-1" onClick={handleresume} >
-                  <img src={logo1} className="download"/> Resume
+                  Resume
                 </button>
               </a>
             </li>
           </ul>
+          <div className="hamburger-menu">
+            <a href="#" onClick={() => setMenuVisible(!menuVisible)}>
+              <GiHamburgerMenu />
+            </a>
+          </div>
+
         </div>
-      </div>
-  );
-};
+      </nav>
+    </div>
+  )
+}

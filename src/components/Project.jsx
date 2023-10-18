@@ -20,31 +20,31 @@ const Project = () => {
 
       <div className="project-card">
 
-        <div className="container">
+        <div className="container-grid">
           <div>
             <img src={tindog} className="project-img" />
           </div>
           <div className="details">
-            <h2 className="project-title">BOAT</h2>
+            <h2 className="project-title">TINDOG</h2>
             <p className="project-description">
-            Discover the pawfect playdate or even puppy love on our HTML, CSS, and Bootstrap-designed website, connecting dogs for tail-wagging fun.
+              Discover the pawfect playdate or even puppy love on our HTML, CSS, and Bootstrap-designed website, connecting dogs for tail-wagging fun.
             </p>
-            <h4>Techstacks:</h4>
+            <h1 className="techstacks">Techstacks:</h1>
             <div className="project-tech-stack">
               <img src={html} />
               <img src={css} />
               <img src={boot} />
             </div>
-            <a href="https://storied-chimera-2168ba.netlify.app/">
+            <a href="https://65255e57a08841387bd3cddb--flourishing-palmier-de8466.netlify.app/">
               <button className="project-github-link">Preview</button>
             </a>
-            <a href="https://github.com/vivekverma4669/boat_project_group_7">
+            <a href="https://github.com/gauravvxv/Tinder-for-dogs">
               <button className="project-deployed-link">Source Code</button>
             </a>
           </div>
         </div>
 
-        <div className="container">
+        <div className="container-grid">
           <div>
             <img src={boat} className="project-img" />
           </div>
@@ -55,7 +55,7 @@ const Project = () => {
               user-friendly navigation gear and communication equipment for
               smooth sailing.
             </p>
-            <h4>Techstacks:</h4>
+            <h1 className="techstacks">Techstacks:</h1>
             <div className="project-tech-stack">
               <img src={html} />
               <img src={css} />
@@ -69,7 +69,7 @@ const Project = () => {
             </a>
           </div>
         </div>
-        <div className="container">
+        <div className="container-grid">
           <div>
             <img src={glossier} className="project-img" />
           </div>
@@ -80,7 +80,7 @@ const Project = () => {
               skincare, makeup, haircare, and wellness products to enhance your
               natural beauty.
             </p>
-            <h4>Techstacks:</h4>
+            <h1 className="techstacks">Techstacks:</h1>
             <div className="project-tech-stack">
               <img src={html} />
               <img src={css} />
@@ -94,9 +94,9 @@ const Project = () => {
             </a>
           </div>
         </div>
-        <div className="container">
+        <div className="container-grid">
           <div>
-            <img src={travel} className="project-img" id="travel-img" />
+            <img src={travel} className="project-img" />
           </div>
           <div className="details">
             <h2 className="project-title">VOYAWANDER</h2>
@@ -104,7 +104,7 @@ const Project = () => {
               VOYAWANDER: Your passport to adventure! Book hotels and more on
               our travel website and embark on unforgettable journeys.
             </p>
-            <h4>Techstacks:</h4>
+            <h1 className="techstacks">Techstacks:</h1>
             <div className="project-tech-stack">
               <img src={react} />
               <img src={redux} />
@@ -118,16 +118,19 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div id="github-streak-stats">
-        <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak" /></a>
+      <div className="github">
+        <div id="github-streak-stats">
+          <a href=""><img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak" /></a>
+        </div>
+        <p className="react-activity-calendar">
+          <img src="https://ghchart.rshah.org/gauravvxv" />
+        </p>
+        <p id="github-stats-card">
+          <img src="https://github-readme-stats.vercel.app/api?username=gauravvxv&show_icons=true&locale=en&theme=dark" alt="GitHub Stats" />
+        </p>
       </div>
-      <p className="react-activity-calendar">
-        <img src="https://ghchart.rshah.org/gauravvxv" />
-      </p>
-      <p id="github-stats-card">
-        <img src="https://github-readme-stats.vercel.app/api?username=gauravvxv&show_icons=true&locale=en&theme=dark" alt="GitHub Stats" />
-      </p>
     </div>
+
   );
 };
 

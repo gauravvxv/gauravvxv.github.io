@@ -56,8 +56,8 @@ export const Home = () => {
     <div id='home'>
      <div className='left'>
       <p>Hi, I'm</p>
-      <h2>Gaurav Sharma</h2>
-      <h2 className='animation'>{text}</h2>
+      <h2  id="user-detail-name">Gaurav Sharma</h2>
+      <img src='https://readme-typing-svg.demolab.com/?font=Fira+Code&size=42&duration=2000&pause=800&color=8E05C2&background=FFFFFF00&width=600&height=61&lines=Full+Stack+Web+Developer;Aspiring+MERN+Developer;Front+End+Developer' alt='animation' className='animation'/>
    <div>
 <a href='#contact'>
 <button className="buttonContact">
