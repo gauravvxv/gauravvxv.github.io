@@ -120,8 +120,8 @@ const Project = () => {
       </div>
       <div className="github">
       <h1 className="stats">Github stats</h1>
-        <div id="github-streak-stats">
-          <img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak" />
+        <div >
+          <img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak" id="github-streak-stats" />
         </div>
         <div id="github-top-langs">
           <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gauravvxv&layout=compact"/>
@@ -129,8 +129,8 @@ const Project = () => {
         <p className="react-activity-calendar">
           <img src="https://ghchart.rshah.org/gauravvxv" />
         </p>
-        <p id="github-stats-card">
-          <img src="https://github-readme-stats.vercel.app/api?username=gauravvxv&show_icons=true&locale=en&theme=dark" alt="GitHub Stats" />
+        <p>
+          <img src="https://github-readme-stats.vercel.app/api?username=gauravvxv&show_icons=true&locale=en&theme=dark" alt="GitHub Stats" id="github-stats-card" />
         </p>
       </div>
     </div>
