@@ -73,7 +73,7 @@ li {
 
 
 .logo h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 400;
 color: white;
 }
@@ -136,6 +136,7 @@ border-right: none;
   .menu-link {
     display: none;
   }
+
 
   .logo,
   .social-media ul {
@@ -208,6 +209,9 @@ border-right: none;
     height: 6rem;
   }
 
+ 
+
+
   .social-media {
     height: 6rem;
     display: flex;
@@ -233,7 +237,7 @@ border-right: none;
   }
 
   .logo h2 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   .social-media {

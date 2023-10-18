@@ -40,23 +40,24 @@
   margin: 20px;
 }
 #contact_insta1{
-  width: 30px;
+  width: 40px;
 background-color: black;
   margin: 20px;
+  margin-bottom: 15px;
 }
 
 #contact_github1:hover{
-  width: 40px;
+  border-bottom: 2px solid purple;
 
 }
 #contact_linkedin1:hover{
-  width: 40px;
+  border-bottom: 2px solid purple;
 }
 #contact_email1:hover{
-  width: 40px;
+  border-bottom: 2px solid purple;
 }
 #contact_insta1:hover{
-  width: 40px;
+  border-bottom: 2px solid purple;
 }
 
 .about-container {
