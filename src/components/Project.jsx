@@ -119,8 +119,12 @@ const Project = () => {
         </div>
       </div>
       <div className="github">
+      <h1 className="stats">Github stats</h1>
         <div id="github-streak-stats">
-          <a href=""><img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak" /></a>
+          <img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak" />
+        </div>
+        <div id="github-top-langs">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gauravvxv&layout=compact"/>
         </div>
         <p className="react-activity-calendar">
           <img src="https://ghchart.rshah.org/gauravvxv" />

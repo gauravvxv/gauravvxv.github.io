@@ -13,7 +13,7 @@ html {
 #about {
   background-color: black;
   max-width: 100%;
-  height: 500px;
+  padding-bottom: 100px;
 }
 
 .container {

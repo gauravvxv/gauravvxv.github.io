@@ -22,6 +22,7 @@ li {
 #projects {
   background-color: black;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .pro {
@@ -125,4 +126,26 @@ li {
 
 .github{
   margin-top: 40px;
+  gap: 20px;
+}
+
+
+#github-top-langs>img{
+width: 40%;
+padding-top: 40px;
+}
+
+.react-activity-calendar>img{
+  width: 40%;
+  height: 200px;
+  padding-top: 40px;
+}
+
+#github-stats-card>img{
+  padding-top: 40px;
+}
+.stats{
+  color: white;
+  font-size: 40px;
+  padding-bottom: 20px;
 }
