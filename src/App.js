@@ -10,10 +10,10 @@ import { Home } from './components/Home';
 function App() {
   return (
     <div className="App">
-    {/* <Navbar/>
-    <Home/>
-     <About/>
-     <Skills/> */}
+     <Navbar/>
+   {/* <Home/>
+     <About/>*/}
+     <Skills/> 
      <Project/>
      <Contact/>
     </div>

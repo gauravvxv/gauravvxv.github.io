@@ -31,6 +31,7 @@ li {
   color: #5b047e;
   animation: fadeInScale 2s ease-in-out infinite alternate;
   transform-origin: center;
+  padding-top: 30px;
 }
 
 @keyframes fadeInScale {
@@ -148,13 +149,13 @@ padding-top: 40px;
   padding-bottom: 20px;
 }
 
-/* Existing CSS styles for larger screens */
+
 
 @media (max-width: 768px) {
-  /* Media query for mobile devices */
+
 
   .pro {
-    font-size: 30px; /* Decrease font size for mobile */
+    font-size: 30px
   }
 
   .projectImg {
