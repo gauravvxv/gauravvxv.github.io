@@ -12,12 +12,12 @@ html {
 }
 
 
-#home{
+.homes{
   background-color:  #12021c;
   padding-bottom: 100px;
 }
 
-#home > .left{
+ .left{
   display: flex;
   flex-direction:column;
   justify-content:center;
@@ -26,19 +26,22 @@ html {
   margin-left: 120px;
 padding-top: 250px;
 }
-#home > .left > p{
+ .left > p{
  font-size: 30px;
  padding-left: 5px;
 }
-#home > .left > h2{
+ .left > h2{
  font-size: 30px;
  text-align: left;
  margin: 20px 0px;
 }
-#home > .left > img{
+ .left > img{
   width: 40%;
 }
-#resume-button-2{
+
+
+
+.resumeButton{
   padding: 8px 30px;
   border-radius: 7px;
   font-weight: 500;
@@ -48,7 +51,7 @@ padding-top: 250px;
   color: white;
   margin-left: 10px;
 }
-#resume-button-2:hover{
+.resumeButton:hover{
   border: 1px solid white;
   color: #8E05C2;
 }
@@ -67,55 +70,46 @@ padding-top: 250px;
   border: 1px solid white;
   color: #8E05C2;
 }
-.background-img{
+
+.backgroundImg{
     width: 30%;
   margin-left: 40%;
   margin-top: -250px;
 }
 
-@media only screen  and (max-width:481px){
- body{
-  width: 100%;
- }
-  #home{
-      display: flex;
-      flex-direction: column;
-     
-  }
-  #home > .left{
-      align-items: center;
-   }
-  #home > .left > h2:first-child{
-      text-align: center;
-      font-size: 12px;
-   }
-  #home > .left >img{
-   width: 100%;
-   }
-   #home > .right{
-      display: none;
+/* Original styles for larger screens */
+
+@media (max-width: 768px) {
+.homes{
+  height: 500px;
+}
+
+  .left {
+    margin-left: 100px; 
+    text-align: center; 
   }
 
-}
+  .left > p{
+    font-size: 24px; 
+    margin-top: -80px;
 
+  }
+  .left > h2 {
+    font-size: 24px; 
+margin-top: -5px;
+  }
 
-/* @media only screen   and (min-width:887px) and (max-width:1099px){
-  #home > .right{
+  .left > img {
+    width: 80%;
+    margin-top: -10px;
+  }
+
+  .backgroundImg {
     display: none;
-}
-#home > .left{
-  align-items: center;
-}
-}
+  }
 
-
-
-@media only screen   and (min-width:482px) and (max-width:1100px){
-  #home > .left{
-    align-items: center;
- }
-  #home > .right{
-    display: none;
+  .resumeButton,
+  .buttonContact {
+    margin-top: 20px; 
+  }
 }
-
-} */
