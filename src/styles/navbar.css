@@ -25,7 +25,7 @@ li {
 .main-nav {
   width: 100%;
   position: fixed;
-  background-color: black; /* Use a semi-transparent background color */
+  background-color: black;
   backdrop-filter: blur(10px); 
   height: 8.5rem;
   display: grid;
@@ -70,7 +70,7 @@ li {
   grid-column: 3/1;
 }
 
-/* ----------- Grid part ends ----------------- */
+
 
 .logo h2 {
   font-size: 4rem;
@@ -114,7 +114,6 @@ border-left: none;
 border-right: none;
 }
 
-/* responsive css style  */
 @media (max-width: 1080px) {
   .main-nav {
     height: 8rem;
@@ -128,7 +127,6 @@ border-right: none;
   }
 }
 
-/* responsive css style  */
 @media (max-width: 998px) {
   .main-nav {
     height: 7rem;

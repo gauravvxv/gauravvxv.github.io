@@ -73,8 +73,10 @@ padding-top: 250px;
   margin-top: -250px;
 }
 
-@media only screen   and (min-width:0px) and (max-width:481px){
- 
+@media only screen  and (max-width:481px){
+ body{
+  width: 100%;
+ }
   #home{
       display: flex;
       flex-direction: column;
@@ -97,7 +99,7 @@ padding-top: 250px;
 }
 
 
-@media only screen   and (min-width:887px) and (max-width:1099px){
+/* @media only screen   and (min-width:887px) and (max-width:1099px){
   #home > .right{
     display: none;
 }
@@ -116,4 +118,4 @@ padding-top: 250px;
     display: none;
 }
 
-}
+} */

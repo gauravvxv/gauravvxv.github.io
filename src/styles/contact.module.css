@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 50.5%;
+}
+
+#contact{
+  background-color: #12021c;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.abt h1 {
+  font-size: 50px;
+  border-bottom: 2px solid  #5b047e;
+  color: #5b047e;
+  animation: fadeInScale 2s ease-in-out infinite alternate;
+  transform-origin: center;
+  margin-bottom: 40px;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.xyz p{
+  color: white;
+  font-size: 18px;
+}
+.img{
+max-width: 30px;
+}
+
+.contactLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjust the gap as needed */
+  flex-wrap: wrap; 
+}
+.contactItems{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+}
+.contactInfo>a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.contactInfo div{
+  color: white;
+  font-size: 20px;
+padding-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  #contact {
+    text-align: center;
+  }
+  .abt>h1 {
+    font-size: 30px;
+  }
+
+  .xyz p {
+    font-size: 20px;
+  }
+
+  .contactLinks {
+    flex-direction: row ;
+  }
+
+  /* Adjust the image size for mobile screens */
+  .img {
+    max-width: 40px; /* Adjust as needed */
+  }
+
+  /* Adjust the gap between the contact items for mobile screens */
+  .contactItem {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+}

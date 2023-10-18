@@ -19,7 +19,7 @@ li {
   list-style: none;
 }
 
-#projects {
+.allProjects {
   background-color: black;
   width: 100%;
   padding-bottom: 50px;
@@ -45,7 +45,7 @@ li {
   }
 }
 
-.container-grid {
+#projectCard {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 50px;
@@ -53,7 +53,7 @@ li {
 }
 
 
-.project-img {
+.projectImg {
   width: 80%;
   height: 300px;
   margin-left: 50px;
@@ -63,13 +63,25 @@ li {
 .details {
   color: white;
 }
+.details h2{
+  font-size: 40px;
+}
 
-.project-tech-stack>img {
+.details p {
+  width: 100%;
+  font-size: 17px;
+}
+
+.details h1{
+  font-size: 30px;
+}
+
+#stacks>img {
   width: 50px;
   margin: 10px;
 }
 
-.project-github-link {
+.details>a button {
   margin: 10px;
   width: 100px;
   height: 30px;
@@ -82,21 +94,7 @@ li {
 
 }
 
-.project-title {
-  font-size: 40px;
-}
-
-.project-description {
-  width: 80%;
-  font-size: 17px;
-  margin-left: 60px;
-}
-
-.tachstacks{
-  font-size: 30px;
-}
-
-.project-github-link:hover {
+.details > a button:hover {
   border-bottom: 2px solid #5b047e;
   border-top: none;
   border-left: none;
@@ -130,22 +128,92 @@ li {
 }
 
 
-#github-top-langs>img{
+.streakStats{
 width: 40%;
 padding-top: 40px;
 }
 
-.react-activity-calendar>img{
+.calendar{
   width: 40%;
   height: 200px;
   padding-top: 40px;
 }
 
-#github-stats-card{
+.statsCard{
   padding-top: 40px;
 }
 .stats{
   color: white;
   font-size: 40px;
   padding-bottom: 20px;
+}
+
+/* Existing CSS styles for larger screens */
+
+@media (max-width: 768px) {
+  /* Media query for mobile devices */
+
+  .pro {
+    font-size: 30px; /* Decrease font size for mobile */
+  }
+
+  .projectImg {
+    width: 80%; /* Make the images full width for mobile */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 0; /* Remove margin */
+    border-radius: 20px; /* Remove border radius */
+  }
+
+  #projectCard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .details h2 {
+    font-size: 20px; 
+  }
+
+  .details p {
+    width: 100%;
+    font-size: 12px; 
+  }
+
+  .details h1 {
+    font-size: 20px;
+  }
+
+  #stacks>img {
+    width: 25px;
+    margin: 2px; 
+  }
+
+  .details > a button,
+  .project-deployed-link {
+    margin: 5px; 
+    width: 80px; 
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .github {
+    margin-top: 20px;
+    gap: 10px; 
+  }
+  .githubStreak,
+  .streakStats,
+  .calendar{
+    width: 50%;
+  }
+  .statsCard>img{
+    width: 50%;
+  }
+  .calendar {
+    height: 150px;
+  }
+
+  .stats {
+    font-size: 32px; 
+    padding-bottom: 10px; 
+  }
 }
