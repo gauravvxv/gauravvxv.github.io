@@ -6,7 +6,7 @@ import insta from "../Images/insta.png.png"
 import email from "../Images/mail.png (2).png"
 const Contact = () => {
   return (
-    <div id={styles.contact}>
+    <div id='contact' className={styles.contacts}>
         <div className={styles.abt}>
        <h1>Contact me</h1>
         </div>

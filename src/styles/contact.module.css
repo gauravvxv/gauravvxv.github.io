@@ -11,7 +11,7 @@ html {
   font-size: 50.5%;
 }
 
-#contact{
+.contacts{
   background-color: #12021c;
   width: 100%;
   text-align: center;
@@ -48,7 +48,8 @@ max-width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Adjust the gap as needed */
+  gap: 20px; 
+  padding-top: 20px;
   flex-wrap: wrap; 
 }
 .contactItems{
