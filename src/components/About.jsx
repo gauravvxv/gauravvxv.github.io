@@ -7,7 +7,7 @@ import insta from "../Images/insta.png.png"
 import mail from "../Images/mail.png (2).png"
 export const About = () => {
   return (
-    <div id={styles.about} className="about-section">
+    <div  id="about" className="about-section">
       {/* top one */}
       <div className='about-container'>
         <h1 className={styles.aboutMe}>About me</h1>
