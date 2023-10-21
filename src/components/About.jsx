@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../Images/formal.png (2).png"
+import logo from "../Images/formal.png.png"
 import styles from "../styles/about.module.css"
 import git from "../Images/github.png.png"
 import linkedin from "../Images/linkedin.png.png"
