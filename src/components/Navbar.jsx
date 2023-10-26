@@ -54,7 +54,7 @@ export const Navbar = () => {
               <a
                 href={resume}
                 target="_blank"
-                download="Gaurav Sharma"
+                download="Gaurav Sharma.pdf"
                 className="nav-link resume"
                 id="resume-link-1"
               >
