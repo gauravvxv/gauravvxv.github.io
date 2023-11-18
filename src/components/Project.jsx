@@ -121,7 +121,10 @@ const Project = () => {
       <div className={styles.github}>
       <h1 className={styles.stats}>Github stats</h1>
         <div  >
-          <img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak" id="github-streak-stats" className={styles.githubStreak}  />
+          {/* <img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak"  /> */}
+          <a href="https://git.io/streak-stats">
+            <img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv" alt="GitHub Streak" id="github-streak-stats" className={styles.githubStreak}  />
+            </a>
         </div>
         <div >
           <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gauravvxv&layout=compact" className={styles.streakStats} id="github-top-langs" />

@@ -4,8 +4,6 @@ import git from "../Images/github.png.png"
 import linkedin from "../Images/linkedin.png.png"
 import insta from "../Images/insta.png.png"
 import email from "../Images/mail.png (2).png"
-
-
 const Contact = () => {
   return (
     <div id='contact' className={styles.contacts}>
@@ -27,11 +25,7 @@ const Contact = () => {
              <img src={linkedin} className={styles.img}  />
             </a>
           </div>
-          <div className={styles.contactItem}>
-            <a href="https://www.instagram.com/gauravvxv" target="_blank" rel="noopener noreferrer">
-            <img src={insta} className={styles.img} />
-            </a>
-          </div>
+       
           <div className={styles.contactItem}  >
             <a href="mailto:gauravxv0410@gmail.com" target="_blank" rel="noopener noreferrer">
             <img src={email} className={styles.img} />

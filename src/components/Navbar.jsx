@@ -8,7 +8,7 @@ export const Navbar = () => {
 
 
   const handleresume = () => {
-    window.open('https://drive.google.com/file/d/1JjlBWWmUZk_45rRkg8o14zt8NgmCDgGj/view?usp=sharing');
+    window.open('https://drive.google.com/file/d/1K_E_Che5KBduqgsZBifmblJuUoy90pmA/view?usp=sharing');
   }
 
 
