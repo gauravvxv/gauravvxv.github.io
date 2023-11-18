@@ -4,6 +4,8 @@ import git from "../Images/github.png.png"
 import linkedin from "../Images/linkedin.png.png"
 import insta from "../Images/insta.png.png"
 import email from "../Images/mail.png (2).png"
+
+
 const Contact = () => {
   return (
     <div id='contact' className={styles.contacts}>
