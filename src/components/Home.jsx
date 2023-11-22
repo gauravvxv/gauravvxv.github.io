@@ -3,7 +3,7 @@ import { useEffect,useState } from 'react';
 import logo from "../Images/bg1.png";
 import styles from "../styles/home.module.css"
 import Link from "react-scroll"
-import resume from "../Images/Gaurav Sharma.pdf"
+import resume from "../Images/Gaurav-Sharma-Resume.pdf"
 
 export const Home = () => {
     const [text, setText] = useState("");
@@ -40,7 +40,7 @@ export const Home = () => {
       };
     }, [charIndex, currentIndex, texts]);
     const handleresume = () =>{
-      window.open('https://drive.google.com/file/d/1JjlBWWmUZk_45rRkg8o14zt8NgmCDgGj/view?usp=sharing');
+      window.open('https://drive.google.com/file/d/1K_E_Che5KBduqgsZBifmblJuUoy90pmA/view?usp=sharing');
     }
     
     function scrollToSection(sectionId) {
@@ -64,7 +64,7 @@ export const Home = () => {
 Contact
  </button>
 </a>
-<a href={resume} download="Gaurav Sharma" id="resume-link-1" target="_blank">
+<a href={resume} download="Gaurav-Sharma-Resume" id="resume-link-1" target="_blank">
 <button  id="resume-button-2" className={styles.resumeButton} onClick={handleresume}> Resume</button>
     </a>
 </div>

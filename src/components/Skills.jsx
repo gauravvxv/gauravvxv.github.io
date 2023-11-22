@@ -8,8 +8,12 @@ import redux from "../Images/redux.png.png"
 import node from "../Images/node.png.png"
 import express from "../Images/express.png.png"
 import mongo from "../Images/mongodb.png.png"
-import boot from "../Images/boot.png.png"
-
+import github from "../Images/github2.png"
+import git from "../Images/git1.png"
+import vscode from "../Images/vscode.png"
+import versel from "../Images/versel.png"
+import cyclic from "../Images/cyclic.jpg"
+import netlify from "../Images/netlify.png"
 
 
 export const Skills = () => {
@@ -53,6 +57,35 @@ export const Skills = () => {
       <img src={mongo} className="skills-card-img"/>
       <p className="skills-card-name">Mongodb</p>
     </div>
+     </div>
+     </div>
+     <div className={styles.animations}>
+     <h1 className={styles.tools}>Tools</h1>
+     </div>
+     <div className={styles.containerTools}>
+     <div className={styles.toolImage}>
+ <img src={github} className={styles.images1}/>
+ <h1 className={styles.toolName}>Github</h1>
+     </div>
+     <div className={styles.toolImage}>
+ <img src={git} className={styles.images1}/>
+ <h1 className={styles.toolName}>Git</h1>
+     </div>
+     <div className={styles.toolImage}>
+ <img src={vscode} className={styles.images1}/>
+ <h1 className={styles.toolName}>Vscode</h1>
+     </div>
+     <div className={styles.toolImage}>
+ <img src={netlify} className={styles.images1}/>
+ <h1 className={styles.toolName}>Netlify</h1>
+     </div>
+     <div className={styles.toolImage}>
+ <img src={versel} className={styles.images1}/>
+ <h1 className={styles.toolName}>Vercel</h1>
+     </div>
+     <div className={styles.toolImage}>
+ <img src={cyclic} className={styles.images1}/>
+ <h1 className={styles.toolName}>Cyclic</h1>
      </div>
      </div>
     </div>

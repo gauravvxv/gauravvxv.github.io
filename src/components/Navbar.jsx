@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-import resume from "../Images/Gaurav Sharma.pdf"
+import resume from "../Images/Gaurav-Sharma-Resume.pdf"
 import { useState } from "react";
 export const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -54,7 +54,7 @@ export const Navbar = () => {
               <a
                 href={resume}
                 target="_blank"
-                download="Gaurav Sharma.pdf"
+                download="Gaurav-Sharma-Resume.pdf"
                 className="nav-link resume"
                 id="resume-link-1"
               >
