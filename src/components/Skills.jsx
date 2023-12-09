@@ -14,7 +14,7 @@ import vscode from "../Images/vscode.png"
 import versel from "../Images/versel.png"
 import cyclic from "../Images/cyclic.jpg"
 import netlify from "../Images/netlify.png"
-
+import postman from "../Images/postman.png.png"
 
 export const Skills = () => {
   return (
@@ -65,27 +65,31 @@ export const Skills = () => {
      <div className={styles.containerTools}>
      <div className={styles.toolImage}>
  <img src={github} className={styles.images1}/>
- <h1 className={styles.toolName}>Github</h1>
+ <p className={styles.toolName}>Github</p>
      </div>
      <div className={styles.toolImage}>
  <img src={git} className={styles.images1}/>
- <h1 className={styles.toolName}>Git</h1>
+ <p className={styles.toolName}>Git</p>
      </div>
      <div className={styles.toolImage}>
  <img src={vscode} className={styles.images1}/>
- <h1 className={styles.toolName}>Vscode</h1>
+ <p className={styles.toolName}>Vscode</p>
      </div>
      <div className={styles.toolImage}>
  <img src={netlify} className={styles.images1}/>
- <h1 className={styles.toolName}>Netlify</h1>
+ <p className={styles.toolName}>Netlify</p>
      </div>
      <div className={styles.toolImage}>
  <img src={versel} className={styles.images1}/>
- <h1 className={styles.toolName}>Vercel</h1>
+ <p className={styles.toolName}>Vercel</p>
      </div>
      <div className={styles.toolImage}>
  <img src={cyclic} className={styles.images1}/>
- <h1 className={styles.toolName}>Cyclic</h1>
+ <p className={styles.toolName}>Cyclic</p>
+     </div>
+     <div className={styles.toolImage}>
+ <img src={postman} className={styles.images1}/>
+ <p className={styles.toolName}>Postman</p>
      </div>
      </div>
     </div>

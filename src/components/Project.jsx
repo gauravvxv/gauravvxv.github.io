@@ -10,6 +10,7 @@ import react from "../Images/react.png.png";
 import redux from "../Images/redux.png.png";
 import tindog from "../Images/tindog.png.png"
 import boot from "../Images/boot.png.png"
+import GitHubCalendar from 'react-github-calendar';
 
 const Project = () => {
   return (
@@ -123,15 +124,19 @@ const Project = () => {
         <div  >
           {/* <img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak"  /> */}
           <a href="https://git.io/streak-stats">
-            <img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv" alt="GitHub Streak" id="github-streak-stats" className={styles.githubStreak}  />
+            <img src="https://github-readme-streak-stats.herokuapp.com?user=gauravvxv&theme=dark" alt="GitHub Streak" id="github-streak-stats" className={styles.githubStreak}  />
             </a>
         </div>
         <div >
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gauravvxv&layout=compact" className={styles.streakStats} id="github-top-langs" />
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gauravvxv&layout=compact&theme=dark" className={styles.streakStats} id="github-top-langs" />
         </div>
-        <p className="react-activity-calendar">
-          <img src="https://ghchart.rshah.org/gauravvxv" className={styles.calendar} />
-        </p>
+        <div className={styles.wrapper}>
+        <div className={styles.calendar}>
+          {/* <img src="https://ghchart.rshah.org/gauravvxv" className={styles.calendar} /> */}
+          <GitHubCalendar username="gauravvxv" className="react-activity-calendar" />
+        </div>
+        </div>
+        
         <p className={styles.statsCard}>
           <img src="https://github-readme-stats.vercel.app/api?username=gauravvxv&show_icons=true&locale=en&theme=dark" alt="GitHub Stats" id="github-stats-card" />
         </p>

@@ -130,14 +130,21 @@ li {
 
 
 .streakStats{
-width: 40%;
+width: 36%;
 padding-top: 40px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .calendar{
-  width: 40%;
-  height: 200px;
+  width: 50%;
+  color: white;
   padding-top: 40px;
+
 }
 
 .statsCard{
@@ -159,10 +166,10 @@ padding-top: 40px;
   }
 
   .projectImg {
-    width: 80%; /* Make the images full width for mobile */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 0; /* Remove margin */
-    border-radius: 20px; /* Remove border radius */
+    width: 80%;
+    height: auto; 
+    margin-left: 0;
+    border-radius: 20px; 
   }
 
   #projectCard {
@@ -176,7 +183,7 @@ padding-top: 40px;
   }
 
   .details p {
-    width: 100%;
+    width: 95%;
     font-size: 12px; 
   }
 
@@ -202,9 +209,12 @@ padding-top: 40px;
     gap: 10px; 
   }
   .githubStreak,
-  .streakStats,
-  .calendar{
+  .streakStats
+ {
     width: 50%;
+  }
+  .calendar{
+    width: 80%;
   }
   .statsCard>img{
     width: 50%;
