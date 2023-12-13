@@ -5,6 +5,7 @@ import linkedin from "../Images/linkedin.png.png";
 import email from "../Images/mail.png (2).png";
 import axios from "axios";
 import { useEffect, useState} from 'react';
+import Popup from './popup';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,19 +15,34 @@ const Contact = () => {
     message: '',
   });
 
+  const [showThankYou, setShowThankYou] = useState(false);
+
   const handleChange = (e)=>{
 setFormData({...formData,[e.target.name]: e.target.value})
   }
 
   const postingData = async(e)=>{
 e.preventDefault();
+
     try {
       const api = await axios.post(`https://portfolio-backend-gaurav-0410.up.railway.app/data`,formData)
       console.log(api.data)
+      setShowThankYou(true);
+      setFormData({
+        fullname: '',
+        number: '',
+        email: '',
+        message: '',
+      });
     } catch (error) {
       console.log(error)
     }
   }
+
+  const closePopup = () => {
+    setShowThankYou(false);
+  };
+
 
   return (
     <div className={styles.main}>
@@ -70,21 +86,26 @@ e.preventDefault();
 
       {/* Right Section - Form */}
       <div className={styles.rightSection}>
-        <form onSubmit={postingData}>
-          <input type="text" id="fullname" name="fullname" value={formData.fullname} placeholder='Full Name' onChange={handleChange} />
-          <br />
-          <br />
-          <input type="number" name="number" id="number" value={formData.number} placeholder='Number'onChange={handleChange} />
-          <br />
-          <br />
-          <input type="email" id="email" name="email" value={formData.email} placeholder='Email' onChange={handleChange} />
-          <br />
-          <br />
-          <textarea id="message" name="message" value={formData.message} placeholder='Enter your message here...' onChange={handleChange}></textarea>
-          <br />
-          <br />
-         <button type='submit' className={styles.submitButton}>Submit</button>
-        </form>
+        {!showThankYou ? (
+           <form onSubmit={postingData}>
+           <input type="text" id="fullname" name="fullname" value={formData.fullname} placeholder='Full Name' onChange={handleChange} />
+           <br />
+           <br />
+           <input type="number" name="number" id="number" value={formData.number} placeholder='Number'onChange={handleChange} />
+           <br />
+           <br />
+           <input type="email" id="email" name="email" value={formData.email} placeholder='Email' onChange={handleChange} />
+           <br />
+           <br />
+           <textarea id="message" name="message" value={formData.message} placeholder='Enter your message here...' onChange={handleChange}></textarea>
+           <br />
+           <br />
+          <button type='submit' className={styles.submitButton}>Submit</button>
+         </form>
+        ): (
+          <Popup onClose={closePopup}/>
+        )}
+       
       </div>
     </div>
     </div>
