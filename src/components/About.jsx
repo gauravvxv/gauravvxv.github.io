@@ -42,20 +42,3 @@ export const About = () => {
   )
 }
 
-
-// <div>
-// <div className='about-container'>
-//   <h1 className='aboutMe'>About me</h1>
-// </div>
-// <div className='container'>
-// <div className='intro'>
-//
-// <div>
-//
-// </div>
-// </div>
-// <div className='formal-image'>
-// <img src={logo} className="home-img"/>
-// </div>
-// </div>
-// </div>

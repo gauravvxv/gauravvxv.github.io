@@ -11,12 +11,23 @@ html {
   font-size: 50.5%;
 }
 
-.contacts{
+.main{
   background-color: #12021c;
   width: 100%;
-  text-align: center;
   padding-bottom: 50px;
 }
+.contacts {
+display: grid;
+grid-template-columns: repeat(2,1fr);
+margin-top: -100px;
+}
+
+.leftSection {
+  flex: 1;
+  padding: 110px;
+  margin-top: 100px;
+}
+
 .abt h1 {
   font-size: 50px;
   border-bottom: 2px solid  #5b047e;
@@ -25,6 +36,7 @@ html {
   transform-origin: center;
   margin-bottom: 40px;
 }
+
 
 @keyframes fadeInScale {
   0% {
@@ -38,10 +50,11 @@ html {
 }
 .xyz p{
   color: white;
-  font-size: 18px;
+  font-size: 25px;
 }
+
 .img{
-max-width: 30px;
+max-width: 50px;
 }
 
 .contactLinks{
@@ -52,21 +65,17 @@ max-width: 30px;
   padding-top: 20px;
   flex-wrap: wrap; 
 }
-.contactItems{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contactInfo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; 
-}
+
 .contactInfo>a{
   text-decoration: none;
   color: white;
   font-size: 20px;
+}
+.contactInfo>a:hover{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  color: purple;
 }
 
 .contactInfo div{
@@ -75,30 +84,100 @@ max-width: 30px;
 padding-top: 20px;
 }
 
+.rightSection {
+  flex: 1;
+ padding-top: -200px;
+  margin-top: 120px;
+}
+form input{
+  width: 400px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+}
+
+form textarea{
+  width: 400px;
+  height: 160px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.submitButton{
+  padding: 20px 170px;
+  border-radius: 7px;
+  font-weight: 500;
+  border: 2px solid #8E05C2;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+}
+
 
 @media (max-width: 768px) {
-  #contact {
-    text-align: center;
+  .main{
+    margin-bottom: 30px;
   }
+  .rightSection{
+margin-top: -80px;
+  }
+  .contacts{
+    display: grid;
+grid-template-columns: repeat(1,1fr);
+margin-top: -220px;
+  }
+  form input{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  form textarea{
+    width: 200px;
+    height: 160px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .submitButton{
+    padding: 7px 60px;
+    border-radius: 7px;
+    font-weight: 500;
+    border: 2px solid #8E05C2;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+  }
+  
   .abt>h1 {
     font-size: 30px;
   }
 
-  .xyz p {
-    font-size: 20px;
-  }
 
-  .contactLinks {
-    flex-direction: row ;
+  .xyz>p {
+    font-size: 15px;
   }
-
-  /* Adjust the image size for mobile screens */
+  
   .img {
-    max-width: 40px; /* Adjust as needed */
+    width: 34px; 
   }
-
-  /* Adjust the gap between the contact items for mobile screens */
-  .contactItem {
-    margin-bottom: 10px; /* Adjust as needed */
+  .contactInfo > div{
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .contactInfo>a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  .contactInfo>a:hover{
+    color: purple;
   }
 }

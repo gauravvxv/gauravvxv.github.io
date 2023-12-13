@@ -6,51 +6,8 @@ import Link from "react-scroll"
 import resume from "../Images/Gaurav-Sharma-Resume.pdf"
 
 export const Home = () => {
-    const [text, setText] = useState("");
-    const texts = [
-      "A Full Stack Web Developer",
-      "A MERN Developer",
-      "A Front-end Developer",
-    ]; 
-
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [charIndex, setCharIndex] = useState(0);
-  
-    useEffect(() => {
-      let animationFrame;
-  
-      const typeText = () => {
-        if (charIndex < texts[currentIndex].length) {
-          setText((prevText) => prevText + texts[currentIndex][charIndex]);
-          setCharIndex(charIndex + 1);
-          animationFrame = requestAnimationFrame(typeText);
-        } else {
-          setTimeout(() => {
-            setText("");
-            setCharIndex(0);
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-          }, 2000);
-        }
-      };
-  
-      animationFrame = requestAnimationFrame(typeText);
-  
-      return () => {
-        cancelAnimationFrame(animationFrame);
-      };
-    }, [charIndex, currentIndex, texts]);
     const handleresume = () =>{
       window.open('https://drive.google.com/file/d/1K_E_Che5KBduqgsZBifmblJuUoy90pmA/view?usp=sharing');
-    }
-    
-    function scrollToSection(sectionId) {
-      const targetSection = document.getElementById(sectionId);
-      if (targetSection) {
-        window.scrollTo({
-          top: targetSection.offsetTop,
-          behavior: "smooth",
-        });
-      }
     }
   return (
     <div id='home' className={styles.homes}>

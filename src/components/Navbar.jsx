@@ -3,6 +3,8 @@ import "../styles/navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import resume from "../Images/Gaurav-Sharma-Resume.pdf"
 import { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 export const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
 
@@ -21,29 +23,29 @@ export const Navbar = () => {
         <div className={menuVisible ? "menu-link mobile-menu-link" :"menu-link" }>
           <ul>
             <li>
-              <a href="#home" className="nav-link home">
+            <Link to="home" smooth={true} duration={800}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="nav-link about">
+            <Link to="about" smooth={true} duration={800}>
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#skills" className="nav-link skills">
+            <Link to="skills" smooth={true} duration={800}>
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#projects" className="nav-link projects">
+            <Link to="projects" smooth={true} duration={800}>
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="nav-link contact">
+            <Link to="contact" smooth={true} duration={800}>
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

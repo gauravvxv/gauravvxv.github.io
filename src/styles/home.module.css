@@ -85,8 +85,7 @@ padding-top: 250px;
 }
 
   .left {
-    margin-left: 100px; 
-    text-align: center; 
+    margin-left: 80px; 
   }
 
   .left > p{
@@ -95,13 +94,13 @@ padding-top: 250px;
 
   }
   .left > h2 {
-    font-size: 24px; 
-margin-top: -5px;
+    font-size: 28px; 
+margin-top: -1px;
   }
 
   .left > img {
-    width: 80%;
-    margin-top: -10px;
+    width: 90%;
+    margin-top: -5px;
   }
 
   .backgroundImg {
@@ -110,6 +109,6 @@ margin-top: -5px;
 
   .resumeButton,
   .buttonContact {
-    margin-top: 20px; 
+    margin-top: 10px; 
   }
 }

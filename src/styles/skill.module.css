@@ -49,7 +49,6 @@ html {
   
   #skillCard:hover {
     background-color: #5b047e; 
-    border: 2px solid rgb(54, 7, 7); 
     animation: border-pulse 0.6s infinite alternate; 
   }
   
@@ -132,7 +131,6 @@ html {
   
   .toolImage:hover {
     background-color: #5b047e; 
-    border: 2px solid rgb(54, 7, 7); 
     animation: border-pulse 0.6s infinite alternate; 
   }
 
@@ -140,8 +138,6 @@ html {
     color:  #5b047e;
     padding: 10px;
     font-size: 30px;
-    
-
   }
   
   @keyframes border-pulse {
@@ -166,16 +162,21 @@ html {
 
   .grid {
     grid-template-columns: repeat(2, 1fr); 
-    width: 80%;
+    width: 100%;
   }
 
   #skillCard {
-    width: 150px;
+    width: 100px;
+    height: 125px;
     margin: 0 auto;
   }
 
+  #skillcard:hover{
+    width: 2px;
+  }
+
   #skillCard p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   #skillCard>img {
@@ -189,25 +190,21 @@ html {
 
   .containerTools {
     grid-template-columns: repeat(2, 1fr); 
-    width: 80%;
+    width: 100%;
   }
 
   .toolImage {
-    width: 150px;
+    width: 100px;
+    height: 125px;
     margin: 0 auto;
   }
 
-  .toolImage:hover {
-    background-color: #5b047e; 
-    border: 2px solid rgb(54, 7, 7); 
-    animation: none;
-  }
-
   .toolName {
-    font-size: 24px;
+    font-size: 20px;
   }
   .images1{
     width: 60px;
     height: 60px;
   }
+  
 }
