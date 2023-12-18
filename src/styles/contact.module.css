@@ -118,11 +118,9 @@ form textarea{
 
 
 @media (max-width: 768px) {
-  .main{
-    margin-bottom: 30px;
-  }
   .rightSection{
 margin-top: -80px;
+padding-bottom: 40px;
   }
   .contacts{
     display: grid;
@@ -153,7 +151,6 @@ margin-top: -220px;
     background-color: black;
     cursor: pointer;
     color: white;
-    margin-left: 10px;
   }
   
   .abt>h1 {
@@ -166,7 +163,7 @@ margin-top: -220px;
   }
   
   .img {
-    width: 34px; 
+    width: 24px; 
   }
   .contactInfo > div{
     font-size: 15px;

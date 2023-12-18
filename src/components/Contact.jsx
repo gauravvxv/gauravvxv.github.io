@@ -14,20 +14,20 @@ const Contact = () => {
     email: '',
     message: '',
   });
-
   const [showThankYou, setShowThankYou] = useState(false);
-
+  
   const handleChange = (e)=>{
 setFormData({...formData,[e.target.name]: e.target.value})
   }
 
   const postingData = async(e)=>{
 e.preventDefault();
-
     try {
-      const api = await axios.post(`https://portfolio-backend-gaurav-0410.up.railway.app/data`,formData)
+      const api = await axios.post(`https://portfolio-backend-gauravsr.up.railway.app/data`,formData)
       console.log(api.data)
       setShowThankYou(true);
+
+      
       setFormData({
         fullname: '',
         number: '',
@@ -43,6 +43,7 @@ e.preventDefault();
     setShowThankYou(false);
   };
 
+  const isSubmitDisabled = Object.values(formData).some((value) => value === '');
 
   return (
     <div className={styles.main}>
@@ -100,12 +101,13 @@ e.preventDefault();
            <textarea id="message" name="message" value={formData.message} placeholder='Enter your message here...' onChange={handleChange}></textarea>
            <br />
            <br />
-          <button type='submit' className={styles.submitButton}>Submit</button>
+          {/* <button type='submit' className={styles.submitButton} disabled={isSubmitDisabled}>Submit</button> */}
+          {isSubmitDisabled ? null : <button type='submit' className={styles.submitButton}>Submit</button>}
          </form>
         ): (
           <Popup onClose={closePopup}/>
-        )}
-       
+          )}
+
       </div>
     </div>
     </div>

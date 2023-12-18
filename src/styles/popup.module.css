@@ -41,19 +41,21 @@
 
 
   @media (max-width: 768px) {
+  
     .popup {
-      padding: 30px; /* Adjust padding for smaller screens */
+      padding: 10px;
+      width: 70%; 
     }
   
     .popup h2 {
-      font-size: 20px; /* Adjust font size for smaller screens */
+      font-size: 20px; 
     }
   
     .popup p {
-      font-size: 16px; /* Adjust font size for smaller screens */
+      font-size: 16px; 
     }
   
     .popup button {
-      padding: 10px 30px; /* Adjust padding for smaller screens */
+      padding: 10px 20px; 
     }
   }

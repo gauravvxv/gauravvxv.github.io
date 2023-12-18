@@ -11,7 +11,9 @@ import redux from "../Images/redux.png.png";
 import tindog from "../Images/tindog.png.png"
 import boot from "../Images/boot.png.png"
 import GitHubCalendar from 'react-github-calendar';
-
+import mongodb from "../Images/mongodb.png.png"
+import node from "../Images/node.png.png"
+import express from "../Images/express.png.png"
 const Project = () => {
   return (
     <div id="projects" className={styles.allProjects}>
@@ -109,6 +111,9 @@ const Project = () => {
             <div className="project-tech-stack" id={styles.stacks}>
               <img src={react} />
               <img src={redux} />
+              <img src={node} />
+              <img src={express} />
+              <img src={mongodb} />
             </div>
             <a href="https://voyawander-cw.netlify.app/">
               <button className="project-github-link" id={styles.githubLink}>Preview</button>
