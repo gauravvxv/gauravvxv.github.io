@@ -19,7 +19,7 @@ import postman from "../Images/postman.png.png"
 export const Skills = () => {
   return (
     <div  id="skills" className={styles.allSkills}>
-     <div className='skill-container'>
+     <div className={styles.skillContainer}>
       <h1 className={styles.skill}>Skills</h1>
      </div>
 

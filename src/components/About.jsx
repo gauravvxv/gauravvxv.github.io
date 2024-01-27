@@ -9,8 +9,8 @@ export const About = () => {
   return (
     <div  id="about" className="about-section">
       {/* top one */}
-      <div className='about-container'>
-        <h1 className={styles.aboutMe}>About me</h1>
+      <div className={styles.aboutContainer}>
+        <h1 className={styles.aboutMe}>About Me</h1>
       </div>
       {/* end */}
 
@@ -20,8 +20,8 @@ export const About = () => {
           A dedicated web developer with a strong foundation in coding and a passion for creating innovative and user-friendly websites. Committed to staying updated with emerging web technologies and continuously improving skills.
           <br />
           <a href="https://github.com/gauravvxv" >
-          </a>
           <img src={git} id={styles.contact_github1} />
+          </a>
           <a href="https://www.linkedin.com/in/gaurav-sharma-827830247/">
             <img src={linkedin}id={styles.contact_linkedin1}  />
           </a>

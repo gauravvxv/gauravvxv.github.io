@@ -32,8 +32,6 @@ div[id="about"] {
 #contact_linkedin1{
   width: 30px;
   margin: 20px;
-
-
 }
 #contact_email1{
   width: 30px;
@@ -46,40 +44,36 @@ background-color: black;
   margin-bottom: 15px;
 }
 
-#contact_github1:hover{
-  border-bottom: 2px solid purple;
 
-}
-#contact_linkedin1:hover{
-  border-bottom: 2px solid purple;
-}
-#contact_email1:hover{
-  border-bottom: 2px solid purple;
-}
-#contact_insta1:hover{
-  border-bottom: 2px solid purple;
+.aboutContainer {
+  width: 92%;
+  padding-top: 20px;
 }
 
-.about-container {
-  margin-bottom: 100px;
-}
+
 
 .aboutMe {
-  font-size: 60px;
-  border-bottom: 2px solid #5b047e;
+  font-size: 40px;
   color: #5b047e;
-  animation: fadeInScale 2s ease-in-out infinite alternate;
-  transform-origin: center;
+  animation: fadeInScaleColorMove 2s ease-in-out infinite alternate;
+  padding-left: 150px;
 }
 
-@keyframes fadeInScale {
+@keyframes fadeInScaleColorMove {
   0% {
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.8) translateY(-10px);
+    color: #5b047e; 
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1) translateY(0);
+    color: #8303b5; /* Color change halfway through */
   }
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0);
+    color: #5b047e; /* Back to the initial color */
   }
 }
 
@@ -91,6 +85,7 @@ background-color: black;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    margin-top: -50px;
   }
 
   .child div {
@@ -125,12 +120,12 @@ background-color: black;
     width: 20px; 
   }
 
-  .about-container {
-    margin-bottom: 30px; 
-  }
+
 
   .aboutMe {
     font-size: 30px;
+    text-align: center;
+    padding-left: 0;
   }
 }
 

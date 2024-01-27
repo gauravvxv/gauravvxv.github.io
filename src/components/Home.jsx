@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect,useState } from 'react';
 import logo from "../Images/bg1.png";
 import styles from "../styles/home.module.css"
 import Link from "react-scroll"
@@ -9,6 +8,8 @@ export const Home = () => {
     const handleresume = () =>{
       window.open('https://drive.google.com/file/d/1K_E_Che5KBduqgsZBifmblJuUoy90pmA/view?usp=sharing');
     }
+
+    
   return (
     <div id='home' className={styles.homes}>
      <div className={styles.left}>

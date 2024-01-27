@@ -28,24 +28,33 @@ margin-top: -100px;
   margin-top: 100px;
 }
 
-.abt h1 {
-  font-size: 50px;
-  border-bottom: 2px solid  #5b047e;
-  color: #5b047e;
-  animation: fadeInScale 2s ease-in-out infinite alternate;
-  transform-origin: center;
-  margin-bottom: 40px;
+.abt{
+  width: 92%;
+  padding-left: 150px;
+  padding-bottom: 40px  ;
 }
 
+.abt h1 {
+  font-size: 40px;
+  color: #5b047e;
+  animation: fadeInScaleColorMove 2s ease-in-out infinite alternate;
+}
 
-@keyframes fadeInScale {
+@keyframes fadeInScaleColorMove {
   0% {
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.8) translateY(-10px);
+    color: #5b047e; 
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1) translateY(0);
+    color: #8303b5; /* Color change halfway through */
   }
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0);
+    color: #5b047e; /* Back to the initial color */
   }
 }
 .xyz p{
@@ -106,10 +115,11 @@ form textarea{
   border-radius: 10px;
 }
 .submitButton{
-  padding: 20px 170px;
+  padding: 20px 120px;
   border-radius: 7px;
+  border: none;
   font-weight: 500;
-  border: 2px solid #8E05C2;
+  box-shadow: 0 10px 20px rgb(177, 1, 246);
   background-color: black;
   cursor: pointer;
   color: white;
@@ -155,6 +165,11 @@ margin-top: -220px;
   
   .abt>h1 {
     font-size: 30px;
+  }
+
+  .abt{
+    text-align: center;
+    padding-left: 0;
   }
 
 

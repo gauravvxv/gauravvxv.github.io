@@ -25,24 +25,34 @@ li {
   padding-bottom: 50px;
 }
 
-.pro {
-  font-size: 50px;
-  border-bottom: 2px solid #5b047e;
-  color: #5b047e;
-  animation: fadeInScale 2s ease-in-out infinite alternate;
-  transform-origin: center;
-  padding-top: 30px;
+.projectContainer{
+  width: 92%;
+  padding-top: 20px;
 }
 
-@keyframes fadeInScale {
+.pro {
+  font-size: 40px;
+  color: #5b047e;
+  animation: fadeInScaleColorMove 2s ease-in-out infinite alternate;
+  transform-origin: center;
+  padding-left: 150px;
+}
+
+@keyframes fadeInScaleColorMove {
   0% {
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.8) translateY(-10px);
+    color: #5b047e; /* Initial color */
   }
-
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1) translateY(0);
+    color: #8303b5; /* Color change halfway through */
+  }
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0);
+    color: #5b047e; /* Back to the initial color */
   }
 }
 
@@ -89,17 +99,15 @@ li {
   background-color: #12021c;
   color: white;
   font-size: 12px;
-  border: 1px solid purple;
+  box-shadow: 0 10px 20px rgb(177, 1, 246);
+  border: none;
   border-radius: 10px;
   cursor: pointer;
 
 }
 
 .details > a button:hover {
-  border-bottom: 2px solid #5b047e;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  box-shadow: 0 15px 25px rgb(177, 1, 246);
 }
 
 .project-deployed-link {
@@ -162,7 +170,9 @@ padding-top: 40px;
 
 
   .pro {
-    font-size: 30px
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0;
   }
 
   .projectImg {

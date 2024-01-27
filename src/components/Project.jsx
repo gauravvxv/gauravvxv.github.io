@@ -17,7 +17,7 @@ import express from "../Images/express.png.png"
 const Project = () => {
   return (
     <div id="projects" className={styles.allProjects}>
-      <div className="project-container">
+      <div className={styles.projectContainer}>
         <h1 className={styles.pro}>Projects</h1>
       </div>
 

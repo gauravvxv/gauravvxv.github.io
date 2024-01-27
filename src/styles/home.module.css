@@ -15,6 +15,7 @@ html {
 .homes{
   background-color:  #12021c;
   padding-bottom: 100px;
+  
 }
 
  .left{
@@ -50,10 +51,11 @@ padding-top: 250px;
   cursor: pointer;
   color: white;
   margin-left: 10px;
+  box-shadow: 0 10px 20px rgb(177, 1, 246);
+
 }
 .resumeButton:hover{
-  border: 1px solid white;
-  color: #8E05C2;
+  box-shadow: 0 15px 25px rgb(177, 1, 246);
 }
 
 .buttonContact{
@@ -64,11 +66,11 @@ padding-top: 250px;
   background-color: black;
   color: white;
   cursor: pointer;
+  box-shadow: 0 10px 20px rgb(177, 1, 246);
 }
 
 .buttonContact:hover{
-  border: 1px solid white;
-  color: #8E05C2;
+  box-shadow: 0 15px 25px rgb(177, 1, 246);
 }
 
 .backgroundImg{

@@ -5,6 +5,7 @@ import resume from "../Images/Gaurav-Sharma-Resume.pdf"
 import { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
+
 export const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
 
