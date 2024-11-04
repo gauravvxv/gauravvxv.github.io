@@ -13,82 +13,61 @@ html {
 
 
 .homes{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
   background-color:  #12021c;
-  padding-bottom: 100px;
+  height: 100vh;
   
 }
 
  .left{
+  flex: 1; 
   display: flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items: flex-start;
-  color: white;
-  margin-left: 120px;
-padding-top: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+padding-left: 70px;
 }
- .left > p{
- font-size: 30px;
- padding-left: 5px;
-}
- .left > h2{
- font-size: 30px;
- text-align: left;
- margin: 20px 0px;
-}
- .left > img{
-  width: 40%;
-}
-
-
 
 .resumeButton{
-  padding: 8px 30px;
+  padding: 8px 50px;
   border-radius: 7px;
   font-weight: 500;
+  font-size: 15px;
   border: 1px solid #8E05C2;
   background-color: black;
   cursor: pointer;
   color: white;
   margin-left: 10px;
   box-shadow: 0 10px 20px rgb(177, 1, 246);
-
 }
 .resumeButton:hover{
   box-shadow: 0 15px 25px rgb(177, 1, 246);
 }
 
-.buttonContact{
-  padding: 8px 30px;
-  border-radius: 7px;
-  font-weight: 500;
-  border: 1px solid #8E05C2;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 10px 20px rgb(177, 1, 246);
-}
 
-.buttonContact:hover{
-  box-shadow: 0 15px 25px rgb(177, 1, 246);
-}
 
-.backgroundImg{
-    width: 30%;
-  margin-left: 40%;
-  margin-top: -250px;
-}
+
 
 /* Original styles for larger screens */
 
 @media (max-width: 768px) {
 .homes{
-  height: 500px;
+  height: 100vh;
 }
 
-  .left {
-    margin-left: 80px; 
-  }
+  
+    .left{
+      flex: 1; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; 
+    }
+     
+  
 
   .left > p{
     font-size: 24px; 
@@ -109,8 +88,11 @@ margin-top: -1px;
     display: none;
   }
 
-  .resumeButton,
-  .buttonContact {
-    margin-top: 10px; 
+  .resumeButton {
+    padding: 4px 15px;
+  }
+
+  .right{
+    display: none;
   }
 }
