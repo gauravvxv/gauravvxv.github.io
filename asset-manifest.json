@@ -1,31 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.b37abcb3.css",
-    "main.js": "/static/js/main.82daa7ea.js",
+    "main.css": "/static/css/main.24105104.css",
+    "main.js": "/static/js/main.60655fb7.js",
     "static/js/787.03146020.chunk.js": "/static/js/787.03146020.chunk.js",
     "static/media/boat.png.png": "/static/media/boat.png.31fca1d3ec137abf0876.png",
+    "static/media/neton.png": "/static/media/neton.532fc73f686f7a933192.png",
     "static/media/glossier.pgn.png": "/static/media/glossier.pgn.b7148119a2f1e0088f96.png",
     "static/media/travel.png.png": "/static/media/travel.png.b86824cb9dd1bc407d60.png",
+    "static/media/chatMate.png": "/static/media/chatMate.9c2d3ee9b5123dea62a3.png",
     "static/media/Gaurav-Sharma-Resume.pdf": "/static/media/Gaurav-Sharma-Resume.6cf61cfb4af87263c926.pdf",
     "static/media/tindog.png.png": "/static/media/tindog.png.33202a08e131cd43a629.png",
-    "static/media/formal.png.png": "/static/media/formal.png.05ac1bd45ea69f5433b1.png",
-    "static/media/linkedin.png.png": "/static/media/linkedin.png.3cde804fb136492d4c30.png",
+    "static/media/formal.png": "/static/media/formal.2707c4f2b68d16ba6da9.png",
     "static/media/bg1.png": "/static/media/bg1.799a80ce8b44d141c176.png",
+    "static/media/socket.png": "/static/media/socket.6c468bc24528cd0852aa.png",
     "static/media/html.png.png": "/static/media/html.png.38918c409b68a7913e18.png",
-    "static/media/insta.png.png": "/static/media/insta.png.94d285812cc296119ecc.png",
+    "static/media/next.png": "/static/media/next.99975ea74738a837a802.png",
     "static/media/vscode.png": "/static/media/vscode.408dd681cba88fdc7506.png",
     "static/media/postman.png.png": "/static/media/postman.png.263ca10c64918e1063ed.png",
+    "static/media/typescript.png": "/static/media/typescript.b445fe2f1d076425bab9.png",
+    "static/media/tailwind.png": "/static/media/tailwind.f9e167ad566e9fbdd614.png",
     "static/media/mongodb.png.png": "/static/media/mongodb.png.2d2f405a24b11ba99de0.png",
     "static/media/github2.png": "/static/media/github2.91776ca101f753d68f2a.png",
     "static/media/js.png.png": "/static/media/js.png.552d9563bae64e275698.png",
     "static/media/express.png.png": "/static/media/express.png.9b344d7469dbbdc76754.png",
+    "static/media/java.webp": "/static/media/java.5b1130dba5d30b1f0261.webp",
     "index.html": "/index.html",
-    "main.b37abcb3.css.map": "/static/css/main.b37abcb3.css.map",
-    "main.82daa7ea.js.map": "/static/js/main.82daa7ea.js.map",
+    "main.24105104.css.map": "/static/css/main.24105104.css.map",
+    "main.60655fb7.js.map": "/static/js/main.60655fb7.js.map",
     "787.03146020.chunk.js.map": "/static/js/787.03146020.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b37abcb3.css",
-    "static/js/main.82daa7ea.js"
+    "static/css/main.24105104.css",
+    "static/js/main.60655fb7.js"
   ]
 }
