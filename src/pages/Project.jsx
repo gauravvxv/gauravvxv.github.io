@@ -22,9 +22,12 @@ import neton from "../Images/neton.png"
 import { HyperText } from "../magicUI/HyperText";
 import 'aos/dist/aos.css'
 import AOS from 'aos'
+import { useTheme } from "../theme/themeContext";
 
 
 const Project = () => {
+
+  const {darkMode} = useTheme();
 
   useEffect(()=>{
     AOS.init({
@@ -35,11 +38,11 @@ const Project = () => {
   })
 
   return (
-    <div id="projects" className={styles.allProjects}>
+    <div id="projects" className={`${styles.allProjects} ${darkMode? 'bg-white' : 'bg-black' }`}>
 
      <div className="flex justify-center p-20" data-aos="fade-up">
       <HyperText
-    className="text-6xl font-bold text-black dark:text-white"
+      className={`text-6xl font-bold ${darkMode ? 'text-black' : 'text-white'}`}
     text="Projects"
     duration={1500}
   />
@@ -50,7 +53,7 @@ const Project = () => {
           <div>
             <img src={tindog} className={styles.projectImg} />
           </div>
-          <div className={styles.details}>
+          <div className={`${styles.details} ${darkMode ? 'text-black' : 'text-white'}`}>
             <h2 className="project-title">TINDOG</h2>
             <p className="project-description">
               Discover the pawfect playdate or even puppy love on our HTML, CSS, and Bootstrap-designed website, connecting dogs for tail-wagging fun.
@@ -74,7 +77,7 @@ const Project = () => {
           <div  >
             <img src={boat} className={styles.projectImg}  />
           </div>
-          <div className={styles.details}>
+          <div className={`${styles.details} ${darkMode ? 'text-black' : 'text-white'}`}>
             <h2 className="project-title">BOAT</h2>
             <p className="project-description">
               Discover essential boat electronics on our website! Browse and buy
@@ -99,7 +102,7 @@ const Project = () => {
           <div>
             <img src={glossier} className={styles.projectImg}   />
           </div>
-          <div className={styles.details}>
+          <div className={`${styles.details} ${darkMode ? 'text-black' : 'text-white'}`}>
             <h2 className="project-title">GLOSSIER</h2>
             <p className="project-description">
               Your go-to destination for women's beauty essentials. Explore
@@ -126,7 +129,7 @@ const Project = () => {
           <div>
             <img src={neton} className={styles.projectImg}/>
           </div>
-          <div className={styles.details}>
+          <div className={`${styles.details} ${darkMode ? 'text-black' : 'text-white'}`}>
             <h2 className="project-title">NETON</h2>
             <p className="project-description">
             Neton is a movie discovery website where users can search for movies, view their release dates, posters, and other details. 
@@ -151,7 +154,7 @@ const Project = () => {
           <div>
             <img src={travel} className={styles.projectImg}  />
           </div>
-          <div className={styles.details}>
+          <div className={`${styles.details} ${darkMode ? 'text-black' : 'text-white'}`}>
             <h2 className="project-title">VOYAWANDER</h2>
             <p className="project-description">
               VOYAWANDER: Your passport to adventure! Book hotels and more on
@@ -178,7 +181,7 @@ const Project = () => {
           <div>
             <img src={chatmate} className={styles.projectImg} />
           </div>
-          <div className={styles.details}>
+          <div className={`${styles.details} ${darkMode ? 'text-black' : 'text-white'}`}>
             <h2 className="project-title">CHATMATE</h2>
             <p className="project-description">
             ChatMate is a real-time chat application that allows users to connect and communicate instantly. Users can create an account, log in, and start chatting with other users in real-time.
@@ -203,9 +206,9 @@ const Project = () => {
       </div>
 
 
-      <div className="flex justify-center p-20" data-aos="fade-up">
+      <div className="flex justify-center p-36" data-aos="fade-up">
       <HyperText
-    className="text-6xl font-bold text-black dark:text-white"
+   className={`text-6xl font-bold ${darkMode ? 'text-black' : 'text-white'}`}
     text="Github Stats"
     duration={1500}
   />

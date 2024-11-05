@@ -12,7 +12,6 @@ html {
 }
 
 .main{
-  background-color: #12021c;
   width: 100%;
   padding-bottom: 50px;
 }
@@ -58,7 +57,6 @@ margin-top: -100px;
   }
 }
 .xyz p{
-  color: white;
   font-size: 25px;
 }
 
@@ -66,29 +64,19 @@ margin-top: -100px;
 max-width: 50px;
 }
 
-.contactLinks{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; 
-  padding-top: 20px;
-  flex-wrap: wrap; 
-}
+
 
 .contactInfo>a{
   text-decoration: none;
-  color: white;
   font-size: 20px;
 }
 .contactInfo>a:hover{
   text-decoration: none;
-  color: white;
   font-size: 20px;
   color: purple;
 }
 
 .contactInfo div{
-  color: white;
   font-size: 20px;
 padding-top: 20px;
 }
@@ -103,14 +91,19 @@ form input{
   height: 60px;
   border-radius: 10px;
   border: none;
+  background-color: white;
+  border: solid black 2px;
   text-align: center;
   font-size: 15px;
 }
+
+
 
 form textarea{
   width: 400px;
   height: 160px;
   text-align: center;
+  border: solid black 2px;
   font-size: 16px;
   border-radius: 10px;
 }
@@ -121,9 +114,7 @@ form textarea{
   font-weight: 500;
   font-size: 20px;
   box-shadow: 0 10px 20px rgb(177, 1, 246);
-  background-color: black;
   cursor: pointer;
-  color: gray;
 }
 
 
@@ -137,6 +128,12 @@ padding-bottom: 40px;
 grid-template-columns: repeat(1,1fr);
 margin-top: -220px;
   }
+
+  .contactLinks{
+     
+  }
+
+  
   form input{
     width: 200px;
     height: 60px;

@@ -4,9 +4,12 @@ import { HyperText } from '../magicUI/HyperText'
 import {SocialIcon} from "react-social-icons"
 import 'aos/dist/aos.css'
 import AOS from 'aos'
+import { useTheme } from '../theme/themeContext'
 
 
 export const About = () => {
+
+  const {darkMode} = useTheme();
 
   useEffect(()=>{
     AOS.init({
@@ -18,11 +21,11 @@ export const About = () => {
   },[]);
 
   return (
-    <div id='about' className='bg-black md:h-screen'>
+    <div id='about' className={`${darkMode ? 'bg-white': 'bg-black'} md:h-screen`}>
       {/* top one */}
       <div className="flex justify-center p-20" data-aos="fade-up">
       <HyperText
-    className="text-6xl font-bold text-black dark:text-white"
+    className={`text-6xl font-bold ${darkMode ? 'text-black' : 'text-white'}`}
     text="About me"
     duration={1500}
   />
@@ -40,7 +43,7 @@ export const About = () => {
 
   <div id="summary" className="md:order-1 order-2" data-aos="fade-up">
     <div id="data" className="md:pt-44 pt-[-400px] p-10">
-      <p className="text-2xl md:text-4xl text-gray-700 dark:text-gray-300 max-w-[400px] md:max-w-5xl leading-relaxed text-justify">
+      <p className={`text-2xl md:text-4xl ${darkMode ? 'text-black' : 'text-gray-400'} max-w-[400px] md:max-w-5xl leading-relaxed text-justify`}>
         An enthusiastic Full Stack Developer with a robust skill set in JavaScript, React, Node.js, Express, MongoDB, and Next.js. 
         I am dedicated to creating dynamic and interactive web applications using the MERN stack, 
         combining technical expertise with strong problem-solving and communication skills to deliver

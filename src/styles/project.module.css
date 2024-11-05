@@ -20,7 +20,6 @@ li {
 }
 
 .allProjects {
-  background-color: black;
   width: 100%;
   padding-bottom: 50px;
 }
@@ -54,7 +53,6 @@ li {
 }
 
 .details {
-  color: white;
   padding-left: 70px;
 }
 
@@ -85,8 +83,6 @@ li {
   margin: 10px;
   width: 100px;
   height: 30px;
-  background-color: #12021c;
-  color: white;
   font-size: 12px;
   box-shadow: 0 10px 20px rgb(177, 1, 246);
   border: none;

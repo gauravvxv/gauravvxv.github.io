@@ -17,7 +17,6 @@ html {
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  background-color:  #12021c;
   height: 100vh;
   
 }
@@ -37,9 +36,8 @@ padding-left: 70px;
   font-weight: 500;
   font-size: 15px;
   border: 1px solid #8E05C2;
-  background-color: black;
+  /* background-color: black; */
   cursor: pointer;
-  color: white;
   margin-left: 10px;
   box-shadow: 0 10px 20px rgb(177, 1, 246);
 }

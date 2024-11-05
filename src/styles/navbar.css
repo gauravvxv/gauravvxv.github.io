@@ -14,7 +14,7 @@
   }
   
     .mobile-menu {
-    z-index: 60; /* Ensure mobile menu is also on top */
+    z-index: 60; 
   }
   
 
